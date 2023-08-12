@@ -50,8 +50,7 @@ for _, dye in ipairs(dyes) do
 	
 	-- moreblocks code
 	if minetest.global_exists("stairsplus") ~= nil then
-		local mod = "plastic_block"
-		local nodename = mod .. ":" .. color
+		local nodename = "plastic_block:" .. color
 		local ndef = table.copy(minetest.registered_nodes[nodename])
 		ndef.sunlight_propagates = true
 
