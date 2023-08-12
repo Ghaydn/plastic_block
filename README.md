@@ -1,6 +1,12 @@
 # Plastic Block mod
 
-Adds colored plastic blocks to the basic_materials plastic
+Adds colored plastic blocks to the basic_materials plastic.
+Recipes:
+9 plastic sheets -> white plastic block;
+any plastic block + any dye (unshaped) -> colored plastic block.
+Supports moreblocks, so you can cut plastic blocks in any shape you like.
+Does NOT support unified dyes.
+
 
 # Copying and licensing
 
