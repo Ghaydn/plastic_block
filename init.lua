@@ -55,7 +55,7 @@ for _, dye in ipairs(dyes) do
 		local ndef = table.copy(minetest.registered_nodes[nodename])
 		ndef.sunlight_propagates = true
 
-		stairsplus:register_all(mod, color, nodename, ndef)
+		stairsplus:register_all("moreblocks", color, nodename, ndef)
 	end
 
 end
