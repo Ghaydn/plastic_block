@@ -12,7 +12,8 @@ local special_colors = {
 	dark_green = "#004400",
 	green = "#00BB00",
 	pink = "#FF6FFF",
-	violet = "#990099",
+	magenta = "#dc14dc",
+	violet = "#7814dc",--"#990099",
 	brown = "#441c12",
 }
 
@@ -52,7 +53,7 @@ for _, dye in ipairs(dyes) do
 	if minetest.global_exists("stairsplus") ~= nil then
 		local nodename = "plastic_block:" .. color
 		local ndef = table.copy(minetest.registered_nodes[nodename])
-		ndeg.groups.plastic = nil
+		ndef.groups.plastic = nil
 		ndef.sunlight_propagates = true
 
 		stairsplus:register_all("moreblocks", color, nodename, ndef)
